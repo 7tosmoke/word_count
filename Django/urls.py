@@ -20,4 +20,5 @@ from . import function  #.表示同级目录
 urlpatterns = [
     path('', function.home),
     path('count/', function.count),
+    path('about/', function.about),
 ]

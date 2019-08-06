@@ -23,3 +23,6 @@ def count(request):
                   {'count': total_count, 'text': text,
                    'sorted': sorted_dict})
 
+
+def about(request):
+    return render(request, 'about.html')
