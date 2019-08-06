@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎来到朱晨杭的第一个网站</title>
+</head>
+<body>
+<h1>统计结果,总字数为{{ count }}字</h1>
+<h2>你的文本为{{ text }}</h2>
+<br>
+<h3>出现频率</h3>
+{% for word,count in sorted %}
+    {{'""'}}{{word}}{{'""'}} 出现了 {{count}} 次
+    <br>
+{% endfor %}
+</body>
+</html>
